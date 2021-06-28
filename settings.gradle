@@ -1,0 +1,6 @@
+rootProject.name = 'ExcelKeywordStatistic'
+include 'ui'
+include 'output'
+include 'core'
+include 'statistic'
+

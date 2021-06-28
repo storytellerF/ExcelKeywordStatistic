@@ -1,0 +1,10 @@
+/.gradle/
+/gradle/wrapper/
+/output/out/production/classes/com/storyteller_f/eks/output/
+/statistic/out/production/classes/com/storyteller_f/eks/statistic/
+/ui/build/
+/ui/out/production/classes/com/
+/core/out/production/classes/com/storyteller_f/eks/core/
+/core/build/
+/output/build/
+/statistic/build/
