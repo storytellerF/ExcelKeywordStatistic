@@ -49,7 +49,9 @@ public class Main {
             jFileChooser.setFileFilter(new FileFilter() {
                 @Override
                 public boolean accept(File f) {
-                    return f.getName().endsWith(".xls") || f.getName().endsWith(".xlsx");
+                    return f.getName().endsWith(".xls") ||
+                            f.getName().endsWith(".xlsx")||
+                            f.getName().endsWith(".ods");
                 }
 
                 @Override

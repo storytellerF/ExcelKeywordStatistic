@@ -10,6 +10,9 @@ dependencies {
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
     implementation group: 'org.apache.poi', name: 'poi-ooxml', version: '4.1.2'
     api(project(":core"))
+    // https://mvnrepository.com/artifact/org.odftoolkit/simple-odf
+    implementation group: 'org.odftoolkit', name: 'simple-odf', version: '0.9.0-RC1'
+
 }
 
 test {
