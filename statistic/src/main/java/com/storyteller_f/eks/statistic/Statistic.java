@@ -76,6 +76,7 @@ public class Statistic {
                 .filter(cell -> cell.getCellType() == CellType.STRING)
                 .map(Cell::getStringCellValue)
                 .filter(s -> s.trim().length() > 0)
+                .parallel()
                 .forEach(s -> {
                     for (KeywordInfo keywordInfo : keywordInfos) {
                         if (s.contains(keywordInfo.keyword)) {

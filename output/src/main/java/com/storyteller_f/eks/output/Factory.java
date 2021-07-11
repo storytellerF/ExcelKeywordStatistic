@@ -11,6 +11,10 @@ public class Factory {
             switch (extension) {
                 case "html":
                     return new HTMLTableOutput(path);
+                case "xlsx":
+                    return new XlsxOutput(path);
+                case "xls":
+                    return new XlsOutput(path);
             }
         }
         return null;
@@ -18,7 +22,9 @@ public class Factory {
 
     public static String[] filter() {
         return new String[]{
-                ".html"
+                ".html",
+                ".xls",
+                ".xlsx"
         };
     }
 }
