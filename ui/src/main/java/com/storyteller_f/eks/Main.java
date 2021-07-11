@@ -35,13 +35,13 @@ public class Main {
     private JButton addKeywordButton;
     private JButton button1;
     private Config config;
-    private FileModel listModel = new FileModel();
-    private List<KeywordInfo> keywordInfos = new ArrayList<>();
-    private KeywordModel keywordModel = new KeywordModel(keywordInfos);
+    private final FileModel listModel = new FileModel();
+    private final List<KeywordInfo> keywordInfos = new ArrayList<>();
 
     public Main(JFrame jFrame) {
         this.jFrame = jFrame;
         fileList.setModel(listModel);
+        KeywordModel keywordModel = new KeywordModel(keywordInfos);
         resultList.setModel(keywordModel);
         addFileButton.addActionListener(e -> {
             if (config == null) return;
@@ -212,7 +212,7 @@ public class Main {
 
                 @Override
                 public String getDescription() {
-                    return "";
+                    return "html,xls,xlsx";
                 }
             });
             jFileChooser.setSelectedFile(new File("e:\\测试\\file.json"));

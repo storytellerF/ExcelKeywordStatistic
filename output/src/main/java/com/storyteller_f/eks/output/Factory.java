@@ -15,6 +15,8 @@ public class Factory {
                     return new XlsxOutput(path);
                 case "xls":
                     return new XlsOutput(path);
+                case "ods":
+                    return new OdsOutput(path);
             }
         }
         return null;
@@ -24,7 +26,8 @@ public class Factory {
         return new String[]{
                 ".html",
                 ".xls",
-                ".xlsx"
+                ".xlsx",
+                ".ods"
         };
     }
 }

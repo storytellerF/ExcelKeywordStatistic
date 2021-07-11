@@ -11,10 +11,10 @@ import java.util.Iterator;
 import java.util.List;
 
 public class ODFWorkbook implements Workbook {
-    Document textDocument;
+    Document document;
 
     public ODFWorkbook(String path) throws Exception {
-        textDocument = Document.loadDocument(path);
+        document = Document.loadDocument(path);
     }
 
     @Override
@@ -89,12 +89,12 @@ public class ODFWorkbook implements Workbook {
 
     @Override
     public int getNumberOfSheets() {
-        return textDocument.getTables().size();
+        return document.getTables().size();
     }
 
     @Override
     public Sheet getSheetAt(int index) {
-        return new SheetProxy(textDocument.getTableList().get(index));
+        return new SheetProxy(document.getTableList().get(index));
     }
 
     @Override
