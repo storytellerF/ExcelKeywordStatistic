@@ -13,9 +13,8 @@
 sheet 有5行数据，第二个sheet
    有3行数据，那么需要填入的数据
    位5。
-5. 结果可以导出。当前仅支持HTML 格式导出。
-   导出的格式位<table>。
+5. 结果可以导出。当前支持HTML，xls,xlsx 格式导出。
 
 ## 安装
 
-需要Java 运行时（Java Runtime Library）
+需要Java 运行时（jre,Java Runtime Environment）
